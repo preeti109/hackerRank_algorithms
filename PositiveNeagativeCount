@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main(){
+    float f1=0,f2=0,f3=0;
+    int arr[100],n,i;
+    scanf("%d",&n);
+    for(int i=0; i<n; i++){
+        scanf("%d",&arr[i]);
+            if(arr[i]>0){
+                f1++;
+            }else if(arr[i]<0){
+                f2++;
+            }else{
+                f3++;
+            }   
+    }
+    printf("%.6f\n%.6f\n%.6f\n",f1/n ,f2/n,f3/n);    
+}
+        
